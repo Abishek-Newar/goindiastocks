@@ -1,23 +1,18 @@
 "use client"
 import Center from '@/components/Center'
-import Line from '@/components/LeftSise/Line'
 import RightSide from '@/components/RightSide'
 import Sidebar from '@/components/Sidebar'
-import { pageState } from '@/data'
-import { useState } from 'react'
+import TopNavigator from '@/components/TopNavigator'
 import {
-  RecoilRoot,
-  atom,
-  selector,
-  useRecoilState,
-  useRecoilValue,
-} from 'recoil';
+  RecoilRoot
+} from 'recoil'
 
 export default function Home() {
 
   return (
    <>
      <RecoilRoot>
+      <TopNavigator />
       <Sidebar />
       <Center />
       <RightSide />

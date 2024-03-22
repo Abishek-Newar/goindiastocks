@@ -1,5 +1,5 @@
-import React, { MouseEventHandler } from 'react'
-import { FaCaretRight, FaCaretLeft } from "react-icons/fa";
+import { MouseEventHandler } from 'react';
+import { FaCaretLeft, FaCaretRight } from "react-icons/fa";
 interface dataprops{
     show: boolean,
     onClick: MouseEventHandler

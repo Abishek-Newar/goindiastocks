@@ -1,3 +1,4 @@
+
 import { atom } from "recoil"
 
 export const sidebar_data = ["Discussion Forum","Market Stories","Sentiment","Market","Sector","Watchlist","Events","News/Interview"]
@@ -43,10 +44,11 @@ export const Right_Data:rightprops[] = [{
 
 export const showState = atom({
     key: "showState",
-    default: false
+    default: true
 })
 
 export const pageState = atom({
     key: "pageState",
     default: "discussion"
 })
+

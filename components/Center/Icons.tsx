@@ -1,9 +1,10 @@
-import React, { ReactElement } from 'react'
-import { IoEyeOutline } from "react-icons/io5";
-import { CiHeart ,CiShare2} from "react-icons/ci";
+import { ReactElement } from 'react';
+import { CiHeart, CiShare2 } from "react-icons/ci";
 import { FaRegMessage } from "react-icons/fa6";
-import { IconType } from "react-icons";
+import { IoEyeOutline } from "react-icons/io5";
+//this component for the like,impression,comment,share part
 const Icon = () => {
+    
   return (
     <div className='flex justify-between'>
         <Icons Icon={<CiHeart className='text-xl' />} datas="2k" />
@@ -18,7 +19,7 @@ interface iconsprops{
     datas: string
 }
 function Icons ({Icon,datas}:iconsprops){
-    return <div className='flex gap-2 items-center'>
+    return <div className='flex gap-2 items-center text-[0.6rem] sm:text-base'>
         {Icon}
         <h1 className='font-semibold'>{datas}</h1>
     </div>
