@@ -12,7 +12,7 @@ const Side = ({show}:dataprops) => {
             <img className=" size-8 lg:size-16 " src="https://docs.google.com/thumbnail?id=1JI01uG2pkR_HcFIgCkkosGRfnYY3YNML" alt="" />
             <h1 className="text-sm lg:text-xl text-white">Hello, User</h1>
             </div>
-            <FaBell />
+            <FaBell className="text-white md:text-2xl text-xl" />
         </div>
         <hr />
         {

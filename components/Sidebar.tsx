@@ -1,8 +1,8 @@
 
 import { showState } from "@/data";
 import { useRecoilState } from "recoil";
-import Line from "./LeftSise/Line";
-import Side from "./LeftSise/Side";
+import Line from "./LeftSideBar/Line";
+import Side from "./LeftSideBar/Side";
 const Sidebar = () => {
   const [show,setShow] = useRecoilState(showState);
   return (
