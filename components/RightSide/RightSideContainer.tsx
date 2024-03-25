@@ -1,8 +1,9 @@
-
 import { Right_Data, pageState } from '@/data'
-import { useRecoilState } from 'recoil'
-import RightCard from './RightSide/RightCard'
-const RightSide = () => {
+import React from 'react'
+import RightCard from './RightCard'
+import { useRecoilState } from 'recoil';
+
+const RightSideContainer = () => {
     const [page,setPage] = useRecoilState(pageState);
   return (
     <div className={`absolute  h-screen right-0 top-11 lg:top-0 w-screen lg:w-[18%]  flex flex-col  z-0  ${page === "side"? "block": "hidden lg:block "}`}>
@@ -18,4 +19,4 @@ const RightSide = () => {
   )
 }
 
-export default RightSide
+export default RightSideContainer
